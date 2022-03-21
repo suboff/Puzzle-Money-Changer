@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 81236162}
   m_Layer: 11
   m_Name: Circle (6)
-  m_TagString: Untagged
+  m_TagString: FreeCoin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -235,6 +235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff43894e0fc8c574295a1846de30fb47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Value: 0
 --- !u!1 &149936728
 GameObject:
   m_ObjectHideFlags: 0
@@ -249,7 +250,7 @@ GameObject:
   - component: {fileID: 149936732}
   m_Layer: 11
   m_Name: Circle (18)
-  m_TagString: Untagged
+  m_TagString: FreeCoin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -347,6 +348,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff43894e0fc8c574295a1846de30fb47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Value: 0
 --- !u!1 &236888069
 GameObject:
   m_ObjectHideFlags: 0
@@ -361,7 +363,7 @@ GameObject:
   - component: {fileID: 236888073}
   m_Layer: 11
   m_Name: Circle (20)
-  m_TagString: Untagged
+  m_TagString: FreeCoin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -459,6 +461,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff43894e0fc8c574295a1846de30fb47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Value: 0
 --- !u!1 &326491804
 GameObject:
   m_ObjectHideFlags: 0
@@ -473,7 +476,7 @@ GameObject:
   - component: {fileID: 326491808}
   m_Layer: 11
   m_Name: Circle (17)
-  m_TagString: Untagged
+  m_TagString: FreeCoin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -571,6 +574,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff43894e0fc8c574295a1846de30fb47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Value: 0
 --- !u!1 &336212331
 GameObject:
   m_ObjectHideFlags: 0
@@ -694,7 +698,7 @@ GameObject:
   - component: {fileID: 345851257}
   m_Layer: 11
   m_Name: Circle (11)
-  m_TagString: Untagged
+  m_TagString: FreeCoin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -792,6 +796,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff43894e0fc8c574295a1846de30fb47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Value: 0
 --- !u!1 &391460845
 GameObject:
   m_ObjectHideFlags: 0
@@ -857,7 +862,7 @@ GameObject:
   - component: {fileID: 440728292}
   m_Layer: 11
   m_Name: Circle (7)
-  m_TagString: Untagged
+  m_TagString: FreeCoin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -955,6 +960,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff43894e0fc8c574295a1846de30fb47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Value: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1052,7 +1058,7 @@ GameObject:
   - component: {fileID: 561044633}
   m_Layer: 11
   m_Name: Circle (13)
-  m_TagString: Untagged
+  m_TagString: FreeCoin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1150,6 +1156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff43894e0fc8c574295a1846de30fb47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Value: 0
 --- !u!1 &570366566
 GameObject:
   m_ObjectHideFlags: 0
@@ -1197,7 +1204,7 @@ GameObject:
   - component: {fileID: 651977749}
   m_Layer: 11
   m_Name: Circle (8)
-  m_TagString: Untagged
+  m_TagString: FreeCoin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1295,6 +1302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff43894e0fc8c574295a1846de30fb47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Value: 0
 --- !u!1 &662126198
 GameObject:
   m_ObjectHideFlags: 0
@@ -1390,6 +1398,49 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &744070552
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 744070554}
+  - component: {fileID: 744070553}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &744070553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 744070552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 708c26bab57314943ad81b70af83a430, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &744070554
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 744070552}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.2673331, y: 7.882856, z: -4.277472}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &822297282
 GameObject:
   m_ObjectHideFlags: 0
@@ -1404,7 +1455,7 @@ GameObject:
   - component: {fileID: 822297286}
   m_Layer: 11
   m_Name: Circle (3)
-  m_TagString: Untagged
+  m_TagString: FreeCoin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1502,6 +1553,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff43894e0fc8c574295a1846de30fb47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Value: 0
 --- !u!1 &925871967
 GameObject:
   m_ObjectHideFlags: 0
@@ -1598,7 +1650,7 @@ GameObject:
   - component: {fileID: 1140883523}
   m_Layer: 11
   m_Name: Circle (16)
-  m_TagString: Untagged
+  m_TagString: FreeCoin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1696,6 +1748,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff43894e0fc8c574295a1846de30fb47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Value: 0
 --- !u!1 &1190939078
 GameObject:
   m_ObjectHideFlags: 0
@@ -1710,7 +1763,7 @@ GameObject:
   - component: {fileID: 1190939082}
   m_Layer: 11
   m_Name: Circle (19)
-  m_TagString: Untagged
+  m_TagString: FreeCoin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1808,6 +1861,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff43894e0fc8c574295a1846de30fb47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Value: 5
 --- !u!1 &1315511858
 GameObject:
   m_ObjectHideFlags: 0
@@ -1822,7 +1876,7 @@ GameObject:
   - component: {fileID: 1315511862}
   m_Layer: 11
   m_Name: Circle (9)
-  m_TagString: Untagged
+  m_TagString: FreeCoin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1920,6 +1974,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff43894e0fc8c574295a1846de30fb47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Value: 0
 --- !u!1 &1458449491
 GameObject:
   m_ObjectHideFlags: 0
@@ -1934,7 +1989,7 @@ GameObject:
   - component: {fileID: 1458449495}
   m_Layer: 11
   m_Name: Circle (15)
-  m_TagString: Untagged
+  m_TagString: FreeCoin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2032,6 +2087,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff43894e0fc8c574295a1846de30fb47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Value: 5
 --- !u!1 &1481719168
 GameObject:
   m_ObjectHideFlags: 0
@@ -2046,7 +2102,7 @@ GameObject:
   - component: {fileID: 1481719172}
   m_Layer: 11
   m_Name: Circle (2)
-  m_TagString: Untagged
+  m_TagString: FreeCoin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2144,6 +2200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff43894e0fc8c574295a1846de30fb47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Value: 0
 --- !u!1 &1513011611
 GameObject:
   m_ObjectHideFlags: 0
@@ -2240,7 +2297,7 @@ GameObject:
   - component: {fileID: 1751431839}
   m_Layer: 11
   m_Name: Circle (1)
-  m_TagString: Untagged
+  m_TagString: FreeCoin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2338,6 +2395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff43894e0fc8c574295a1846de30fb47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Value: 0
 --- !u!1 &1787423925
 GameObject:
   m_ObjectHideFlags: 0
@@ -2352,7 +2410,7 @@ GameObject:
   - component: {fileID: 1787423929}
   m_Layer: 11
   m_Name: Circle (12)
-  m_TagString: Untagged
+  m_TagString: FreeCoin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2450,6 +2508,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff43894e0fc8c574295a1846de30fb47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Value: 0
 --- !u!1 &1922437961
 GameObject:
   m_ObjectHideFlags: 0
@@ -2464,7 +2523,7 @@ GameObject:
   - component: {fileID: 1922437965}
   m_Layer: 11
   m_Name: Circle (5)
-  m_TagString: Untagged
+  m_TagString: FreeCoin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2562,6 +2621,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff43894e0fc8c574295a1846de30fb47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Value: 0
 --- !u!1 &1985369918
 GameObject:
   m_ObjectHideFlags: 0
@@ -2576,7 +2636,7 @@ GameObject:
   - component: {fileID: 1985369922}
   m_Layer: 11
   m_Name: Circle (10)
-  m_TagString: Untagged
+  m_TagString: FreeCoin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2674,6 +2734,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff43894e0fc8c574295a1846de30fb47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Value: 0
 --- !u!1 &2020073094
 GameObject:
   m_ObjectHideFlags: 0
@@ -2688,7 +2749,7 @@ GameObject:
   - component: {fileID: 2020073098}
   m_Layer: 11
   m_Name: Circle
-  m_TagString: Untagged
+  m_TagString: FreeCoin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2786,6 +2847,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff43894e0fc8c574295a1846de30fb47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Value: 0
 --- !u!1 &2038569796
 GameObject:
   m_ObjectHideFlags: 0
@@ -2800,7 +2862,7 @@ GameObject:
   - component: {fileID: 2038569800}
   m_Layer: 11
   m_Name: Circle (14)
-  m_TagString: Untagged
+  m_TagString: FreeCoin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2898,6 +2960,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff43894e0fc8c574295a1846de30fb47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Value: 0
 --- !u!1 &2145677874
 GameObject:
   m_ObjectHideFlags: 0
@@ -2912,7 +2975,7 @@ GameObject:
   - component: {fileID: 2145677878}
   m_Layer: 11
   m_Name: Circle (4)
-  m_TagString: Untagged
+  m_TagString: FreeCoin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3010,3 +3073,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff43894e0fc8c574295a1846de30fb47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Value: 0

@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class CoinController : MonoBehaviour
 {
+    private GameManager m_GameManager;
+    
     private int m_MoveDirection;
     private Vector2 m_Destination;
     private float m_Speed = 20.0f;
+
+    public int Value;
 
     public bool IsMoving
     {
@@ -19,7 +23,7 @@ public class CoinController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        m_GameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -34,6 +38,8 @@ public class CoinController : MonoBehaviour
             {
                 transform.position = new Vector2(transform.position.x, m_Destination.y);
                 m_MoveDirection = 0;
+                // Change to only flag when coin was traveling up
+                m_GameManager.NeedsUpdate = true;
             }
         }
     }
