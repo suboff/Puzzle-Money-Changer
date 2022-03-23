@@ -8,8 +8,30 @@ public class GameManager : MonoBehaviour
     { 
         get; set; 
     }
+    public int BoardWidth
+    {
+        get
+        {
+            return m_FreeCoins.GetLength(1);
+        }
+    }
+    public int BoardHeight
+    {
+        get
+        {
+            return m_FreeCoins.GetLength(0);
+        }
+    }
 
-    private CoinController[,] m_FreeCoins;
+    private GameObject[] m_CoinObjects;
+    private CoinNode[,] m_FreeCoins;
+    public CoinNode[,] FreeCoins
+    {
+        get
+        {
+            return m_FreeCoins;
+        }
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +53,13 @@ public class GameManager : MonoBehaviour
         // Be smarter, only rebuild dirty sections
         RebuildCoinList();
 
+        if (m_CoinObjects.Length > 0)
+        {
+            Stack<CoinNode> coinNodes;
+        }
+
+
+        /*
         for (int y = 0; y < m_FreeCoins.GetLength(0); y++)
         {
             string row = "";
@@ -49,6 +78,7 @@ public class GameManager : MonoBehaviour
             }
             Debug.Log(row);
         }
+        */
     }
 
     private void CoinPositionToIndex(Vector2 position, out int x, out int y)
@@ -59,15 +89,15 @@ public class GameManager : MonoBehaviour
 
     private void RebuildCoinList()
     {
-        m_FreeCoins = new CoinController[12, 7];
+        m_FreeCoins = new CoinNode[12, 7];
 
-        GameObject[] coins = GameObject.FindGameObjectsWithTag("FreeCoin");
+        m_CoinObjects = GameObject.FindGameObjectsWithTag("FreeCoin");
         int yIndex, xIndex;
 
-        foreach (GameObject coin in coins)
+        foreach (GameObject coin in m_CoinObjects)
         {
             CoinPositionToIndex(coin.transform.position, out xIndex, out yIndex);
-            m_FreeCoins[yIndex, xIndex] = coin.GetComponent<CoinController>();
+            m_FreeCoins[yIndex, xIndex] = new CoinNode(coin.GetComponent<CoinController>());
         }
     }
 }

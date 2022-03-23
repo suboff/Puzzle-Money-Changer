@@ -11,6 +11,77 @@ public class CoinController : MonoBehaviour
     private float m_Speed = 20.0f;
 
     public int Value;
+    public int XIndex
+    {
+        get
+        {
+            return Mathf.FloorToInt(transform.position.x);
+        }
+    }
+    public int YIndex
+    {
+        get
+        {
+            return Mathf.FloorToInt(14.0f - transform.position.y);
+        }
+    }
+
+    public CoinNode Left
+    {
+        get
+        {
+            if (XIndex - 1 < 0)
+            {
+                return null;
+            }
+            else
+            {
+                return m_GameManager.FreeCoins[YIndex, XIndex - 1];
+            }
+        }
+    }
+    public CoinNode Right
+    {
+        get
+        {
+            if (XIndex + 1 >= m_GameManager.BoardWidth)
+            {
+                return null;
+            }
+            else
+            {
+                return m_GameManager.FreeCoins[YIndex, XIndex + 1];
+            }
+        }
+    }
+    public CoinNode Up
+    {
+        get
+        {
+            if (YIndex - 1 < 0)
+            {
+                return null;
+            }
+            else
+            {
+                return m_GameManager.FreeCoins[YIndex - 1, XIndex];
+            }
+        }
+    }
+    public CoinNode Down
+    {
+        get
+        {
+            if (YIndex + 1 >= m_GameManager.BoardHeight)
+            {
+                return null;
+            }
+            else
+            {
+                return m_GameManager.FreeCoins[YIndex + 1, XIndex];
+            }
+        }
+    }
 
     public bool IsMoving
     {
