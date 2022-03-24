@@ -108,9 +108,16 @@ public class CoinController : MonoBehaviour
                 || (m_MoveDirection < 0 && transform.position.y < m_Destination.y))
             {
                 transform.position = new Vector2(transform.position.x, m_Destination.y);
-                m_MoveDirection = 0;
+                
+                // Coin back on the board, tag as free
+                if(m_MoveDirection == 1)
+                {
+                    gameObject.tag = "FreeCoin";
+                }
+                
                 // Change to only flag when coin was traveling up
                 m_GameManager.NeedsUpdate = true;
+                m_MoveDirection = 0;
             }
         }
     }
@@ -118,6 +125,7 @@ public class CoinController : MonoBehaviour
     public void SetDestination(Vector2 destination)
     {
         m_Destination = destination;
+        gameObject.tag = "HeldCoin";
         if(m_Destination.y < transform.position.y)
         {
             m_MoveDirection = -1;
